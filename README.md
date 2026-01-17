@@ -9,7 +9,7 @@ This repository represents a **stabilized, deployable version** of the applicati
 ## 🚀 Live Demo
 
 🔗 **Deployed App:**
-<YOUR_SEVALLA_URL_HERE>
+https://dentwise-kjqjy.sevalla.app/
 
 ---
 
