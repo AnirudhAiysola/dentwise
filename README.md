@@ -1,51 +1,67 @@
-<h1 align="center">🦷 Dentwise – Dental Platform with AI Voice Agent 🦷</h1>
+# Dentwise (Production Deployment)
 
-![Demo App](/public/screenshot-for-readme.png)
+A production-ready full-stack web application built with **Next.js (App Router)**, **Prisma**, **Neon (Postgres)**, and **Clerk authentication**, deployed on **Sevalla**.
 
-Highlights:
-
-- 🏠 Modern Landing Page with gradients & images
-- 🔐 Authentication via Clerk (Google, GitHub, Email & Password)
-- 🔑 Email Verification (6-digit code)
-- 📅 Appointment Booking System
-- 🦷 3-Step Booking Flow (Dentist → Service & Time → Confirm)
-- 📩 Email Notifications for Bookings (Resend)
-- 📊 Admin Dashboard for Managing Appointments
-- 🗣️ AI Voice Agent powered by Vapi (Pro Plans only)
-- 💳 Subscription Payments with Clerk (Free + 2 Paid Plans)
-- 🧾 Automatic Invoices via Email
-- 💸 Smart Subscription Upgrades (pay only the difference)
-- 📂 PostgreSQL for Data Persistence
-- 🎨 Styling with Tailwind CSS + Shadcn
-- ⚡ Data Fetching with TanStack Query
-- 🤖 CodeRabbit for PR Optimizations
-- 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
-- 🚀 Deployment on Sevalla (free-tier friendly)
+This repository represents a **stabilized, deployable version** of the application.
 
 ---
 
-## 🧪 .env Setup
+## 🚀 Live Demo
+
+🔗 **Deployed App:**
+<YOUR_SEVALLA_URL_HERE>
+
+---
+
+## 🧱 Tech Stack
+
+* **Frontend:** Next.js (App Router), React
+* **Backend:** Server Actions, Prisma ORM
+* **Database:** Neon (PostgreSQL)
+* **Authentication:** Clerk
+* **Deployment:** Sevalla
+
+---
+
+## ✨ Key Features
+
+* Secure user authentication with Clerk
+* Database-backed user synchronization
+* Protected routes and role-based access
+* Appointment tracking and dashboard analytics
+* Production-safe server actions
+* Deployed and tested with new-user and existing-user flows
+
+---
+
+## 🛠️ Engineering Notes
+
+This project was developed iteratively.
+
+The initial structure was inspired by a reference implementation, after which the application was **extended, stabilized, and prepared for production deployment**. During development, I focused on:
+
+* Backend data consistency between Clerk and the database
+* Handling edge cases for first-time users
+* Debugging server-action execution context issues
+* Ensuring reliable behavior under real deployment conditions
+
+This repository reflects the **final, stable production build** used for deployment.
+
+---
+
+
+## 🧪 Running Locally
 
 ```bash
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-
-DATABASE_URL=your_postgres_database_url
-
-NEXT_PUBLIC_VAPI_ASSISTANT_ID=your_vapi_assistant_id
-NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
-
-ADMIN_EMAIL=your_admin_email
-
-RESEND_API_KEY=your_resend_api_key
-
-NEXT_PUBLIC_APP_URL=your_app_url
-
+npm install
+npx prisma generate
+npm run dev
 ```
 
-## Run the app
+---
 
-```bash
-1- npm install
-2- npm run dev
-```
+## 📌 Notes
+
+* This repository is intended to showcase a **working, production-ready application**
+* Development history and experimentation were maintained separately during the learning phase
+* The deployed version prioritizes stability, correctness, and clean architecture
