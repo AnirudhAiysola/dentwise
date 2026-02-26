@@ -6,11 +6,6 @@ This repository represents a **stabilized, deployable version** of the applicati
 
 ---
 
-## 🚀 Live Demo
-
-🔗 **Deployed App:**
-https://dentwise-kjqjy.sevalla.app/
-
 ---
 
 ## 🧱 Tech Stack
