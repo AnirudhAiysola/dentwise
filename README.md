@@ -5,7 +5,7 @@ A production-ready full-stack web application built with **Next.js (App Router)*
 This repository represents a **stabilized, deployable version** of the application.
 
 ---
-
+## Production URL : https://dentwise-kjqjy.sevalla.app/
 ---
 
 ## 🧱 Tech Stack
